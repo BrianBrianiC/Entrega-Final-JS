@@ -1,0 +1,397 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    box-shadow: 1px 1px 20px 5px rgb(146, 146, 146);
+}
+
+.nav div {
+    margin: 0px 40px 0px 40px;
+}
+
+.nav__img {
+    width: 95px;
+    height: 100px;
+}
+
+.nav__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+ul,li {
+    list-style: none;
+    font-size: 1.25rem;
+    gap: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav__lista a:hover {
+    color: rgb(13, 71, 218);
+    transition: 0.5s;
+}
+
+/* MAIN INDEX */
+
+.aprende {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 40px 0px 20px 0px;
+}
+
+.aprende__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.aprende__div h1 {
+    font-size: 3.5rem;
+    width: 40%;
+}
+
+.aprende__div img {
+    width: 600px;
+    height: 450px;
+}
+
+.conversor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conversor h2 {
+    font-size: 2rem;
+    margin: 20px;
+}
+
+.conversor h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.conversor__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 400px;
+    padding: 50px;
+    margin-bottom: 50px;
+
+    border-radius: 30px;
+    box-shadow: 1px 1px 20px 5px rgb(146, 146, 146);
+}
+
+.conversor__input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border-color: rgb(13, 71, 218);
+}
+
+.conversor__submit input {
+    padding: 8px 20px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+    border-color: rgb(13, 71, 218);
+}
+
+.conversor__submit input:hover {
+    background-color: rgb(13, 71, 218);
+    color: white;
+    transition: 1s;
+}
+
+.conversor__divisas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    margin: 12px 0px 12px 0px;
+}
+
+.conversor__form h4 {
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+.conversor__form h5 {
+    text-align: center;
+    font-size: 0.813rem;
+}
+
+.cursos__titulos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cursos h2 {
+    font-size: 2rem;
+    margin: 20px;
+}
+
+.cursos h3 {
+    font-size: 1.5rem;
+    margin: 0px 20px 10px 20px;
+}
+
+.cursos__article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursos__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursos__tarjetas {
+    margin: 40px;
+}
+
+.cursos__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursos__contenido p {
+    text-align: center;
+}
+
+/* MAIN LOG */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 400px;
+    padding: 50px;
+    margin: 140px auto 140px;
+
+    border-radius: 30px;
+    box-shadow: 1px 1px 20px 5px rgb(146, 146, 146);
+}
+
+.form h1 {
+    font-size: 3.5rem;
+}
+
+.form h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border-color: rgb(13, 71, 218);
+}
+
+.form__submit {
+    padding: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+    border-color: rgb(13, 71, 218);
+}
+
+.form__submit:hover {
+    background-color: rgb(13, 71, 218);
+    color: white;
+    transition: 1s;
+}
+
+.form h3 {
+    font-size: 0.813rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form a {
+    color: rgb(13, 71, 218);
+}
+
+/* MAIN REGISTRO */
+
+.form__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.form__input--register {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border-color: rgb(13, 71, 218);
+
+    font-size: 0.813rem;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #f8f9fa; 
+    margin-top: 1.25rem;
+    padding: 2.5rem; 
+    text-align: center; 
+    border-top: 1px solid #e9ecef; 
+}
+
+.footer__contacto {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.footer__contacto a {
+    color: #333; 
+    font-size: 24px; 
+    transition: color 0.3s ease; 
+}
+
+.footer__contacto a:hover {
+    color: #007bff; 
+}
+
+/* ALERTASSSS */
+
+.alertas {
+    color: red;
+    text-align: center;
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1024px) {
+
+    .nav__img {
+        width: 65px;
+        height: 80px;
+    }
+
+    .aprende__div {
+        flex-direction: row;
+    }
+    
+    .aprende__div h1 {
+        font-size: 3.5rem;
+        width: 40%;
+    }
+    
+    .aprende__div img {
+        width: 600px;
+        height: 450px;
+    }
+
+    .conversor h2 {
+        font-size: 2rem;
+        margin: 20px;
+    }
+    
+    .conversor h3 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .conversor__form {
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .conversor__input {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        margin-top: -10px;
+    }
+    
+    .conversor__submit input {
+        padding: 8px 20px;
+        margin: 0px 5px 10px 5px;
+        font-size: 1rem;
+    }
+
+    .conversor__form h4 {
+        font-size: 1.125rem;
+    }
+
+    .cursos__titulos h2 {
+        font-size: 2rem;
+    }
+
+    .cursos__titulos h3 {
+        font-size: 1.5rem;
+    }
+
+    .cursos__div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form {
+        width: 400px;
+    }
+
+    .form h1 {
+        font-size: 3.5rem;
+    }
+    
+    .form h2 {
+        font-size: 1rem;
+    }
+
+    .footer {
+        flex-direction: row;
+    }
+
+    .footer img {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+    }
+}

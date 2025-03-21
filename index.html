@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Convertidor y Finanzas | Inicio</title>
+</head>
+
+<body>
+
+    <header id="inicio">
+        <nav class="nav navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img class="nav__img navbar-brand" src="./img/logo-solo.png" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="nav__div collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav__lista navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#conversor">Conversor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cursos">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navLogin" class="nav-link" href="./pages/login.html">Iniciar Sesion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section data-aos="fade-up" data-aos-duration="2000" class="aprende">
+
+            <div class="aprende__div">
+                <h1>Aprende mas del mundo financiero y hace crecer tu dinero!</h1>
+                <img src="./img/aprende-mundo-financiero.png" alt="">
+            </div>
+
+        </section>
+
+        <section id="conversor" class="conversor">
+
+            <h2 data-aos="fade-down" data-aos-duration="2000">Conversor de Divisas</h2>
+            <h3 data-aos="fade-down" data-aos-duration="2000">Converti divisas con facilidad, y toma buenas y rapidas desiciones!</h3>
+
+            <form id="formConversor" data-aos="fade-up" data-aos-duration="2000" class="conversor__form">
+                <input id="inputCantidad" class="conversor__input" type="number" placeholder="Ingresa la cantidad a convertir!">
+                <div class="conversor__submit">
+                    <input id="submitDolar" type="submit" value="Dolar">
+                    <input id="submitDivisas" type="submit" value="+Divisas">
+                    <input id="submitPeso" type="submit" value="Peso">
+                </div>
+                <div>
+                    <h5 id="paridad">USD - ARS</h5>
+                    <p id="alertaCompleta" class="alertas"></p>
+                </div>
+                <div class="conversor__divisas">
+                    <h4 id="divisaDolarOficial">Oficial</h4>
+                    <h4 id="valorDolarOficial">$0,00</h4>
+                </div>
+                <div class="conversor__divisas">
+                    <h4 id="divisaDolarBlue">Blue</h4>
+                    <h4 id="valorDolarBlue">$0,00</h4>
+                </div>
+                <div class="conversor__divisas">
+                    <h4 id="divisaDolarTarjeta">Tarjeta</h4>
+                    <h4 id="valorDolarTarjeta">$0,00</h4>
+                </div>
+                <div class="conversor__divisas">
+                    <h4 id="divisaDolarCCL">CCL</h4>
+                    <h4 id="valorDolarCCL">$0,00</h4>
+                </div>
+                <div class="conversor__divisas">
+                    <h4 id="divisaDolarMEP">MEP</h4>
+                    <h4 id="valorDolarMEP">$0,00</h4>
+                </div>
+                <div class="conversor__divisas">
+                    <h4 id="divisaDolarMayorista">Mayorista</h4>
+                    <h4 id="valorDolarMayorista">$0,00</h4>
+                </div>
+                <h5>El precio mostrado es un promedio entre la compra y la venta.</h5>
+            </form>
+
+        </section>
+
+        <section id="cursos" class="cursos">
+
+            <div data-aos="fade-down" data-aos-duration="2000" class="cursos__titulos">
+                <h2>Empeza a aprender!</h2>
+                <h3>Toma cualquiera de nuestros cursos en YouTube totalmente gratis!</h3>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000" class="cursos__div">
+                <div class="cursos__tarjetas card" style="width: 18rem;">
+                    <img src="./img/aprende-trading.jpg" class="card-img-top" alt="...">
+                    <div class="cursos__contenido card-body">
+                        <h5 class="card-title">Aprende Trading</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ad porro
+                            magnam quibusdam culpa
+                            accusamus ipsam illo rem at, dolor labore commodi doloribus voluptate facere minima itaque
+                            quos
+                            voluptatem beatae.</p>
+                        <a href="#" class="btn btn-primary">Aprende!</a>
+                    </div>
+                </div>
+                <div class="cursos__tarjetas card" style="width: 18rem;">
+                    <img src="./img/todo-sobre-divisas.jpg" class="card-img-top" alt="...">
+                    <div class="cursos__contenido card-body">
+                        <h5 class="card-title">Todo sobre Divisas</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ad porro
+                            magnam quibusdam culpa
+                            accusamus ipsam illo rem at, dolor labore commodi doloribus voluptate facere minima itaque
+                            quos
+                            voluptatem beatae.</p>
+                        <a href="#" class="btn btn-primary">Aprende!</a>
+                    </div>
+                </div>
+                <div class="cursos__tarjetas card" style="width: 18rem;">
+                    <img src="./img/aprende-leer-graficas.jpg" class="card-img-top" alt="...">
+                    <div class="cursos__contenido card-body">
+                        <h5 class="card-title">Aprende a Leer Graficas</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ad porro
+                            magnam quibusdam culpa
+                            accusamus ipsam illo rem at, dolor labore commodi doloribus voluptate facere minima itaque
+                            quos
+                            voluptatem beatae.</p>
+                        <a href="#" class="btn btn-primary">Aprende!</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__contacto">
+            <a href="" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

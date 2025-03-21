@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <title>Iniciar Sesion</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img class="nav__img navbar-brand" src="../img/logo-solo.png" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="nav__div collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav__lista navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#conversor">Conversor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#cursos">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="navRegister" class="nav-link" href="./register.html">Registrarse</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <form id="formLogin" data-aos="zoom-in" data-aos-duration="2000" class="form">
+            <h1>Ingresa!</h1>
+            <h2>Ingresa a tu cuenta y dizfruta de todo al maximo!</h2>
+            <input id="inputTuMail" class="form__input" type="email" placeholder="Ingresa tu mail">
+            <input id="inputTuPassword" class="form__input" type="password" placeholder="Ingresa tu contraseña">
+            <input class="form__submit" type="submit" value="Ingresar!">
+            <h3 id="textoRegistrate">No tenes cuenta? Hace <a href="./register.html">click aca</a> y registrate!</h3>
+        </form>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__contacto">
+            <a href="" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
