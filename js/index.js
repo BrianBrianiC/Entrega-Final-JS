@@ -8,12 +8,12 @@ class Divisas {
 
 // Se crean los arrays con las divisas.
 const dolares = [
-    new Divisas('Oficial', 357),
-    new Divisas('Blue', 725),
-    new Divisas('Tarjeta', 642),
-    new Divisas('CCL', 768),
-    new Divisas('MEP', 670),
-    new Divisas('Mayorista', 349),
+    new Divisas('Oficial', 1095),
+    new Divisas('Blue', 1310),
+    new Divisas('Tarjeta', 1425),
+    new Divisas('CCL', 1362),
+    new Divisas('MEP', 1337),
+    new Divisas('Mayorista', 1093),
 ]
 
 const divisas = [
@@ -59,28 +59,26 @@ const valorDolarMayorista = document.querySelector('#valorDolarMayorista')
 
 // LA API SOLAMENTE PERMITIA LLAMADAS CON PROTOCOLO HTTP, POR ESO NO SE UTILIZO HTTPS. SE DEBE EJECUTAR DE MANERA LOCAL.
 // Se declara una funcion para obtener las tasas de cambio de la API.
-function obtenerTasasDeCambio() {
+async function obtenerTasasDeCambio() {
     const apiKey = '768e5add5e1ae0d8f01f7c7741f1ad51';
     const baseCurrency = 'EUR'; 
-
-    // Se crea una lista de nombres de divisas para la URL.
     const divisasNombres = divisas.map(divisa => divisa.nombre);
 
-    const apiUrl = `http://data.fixer.io/api/latest?base=${baseCurrency}&symbols=${divisasNombres.join(',')}&access_key=${apiKey}`;
+    const apiUrl = `https://data.fixer.io/api/latest?base=${baseCurrency}&symbols=${divisasNombres.join(',')}&access_key=${apiKey}`;
 
-    fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-            const rates = data.rates;
-            for (const divisa of divisas) {
-                if (rates.hasOwnProperty(divisa.nombre)) {
-                    divisa.paridad = rates[divisa.nombre];
-                }
+    try {
+        const response = await fetch(apiUrl);
+        const data = await response.json(); 
+
+        const rates = data.rates;
+        for (const divisa of divisas) {
+            if (rates.hasOwnProperty(divisa.nombre)) {
+                divisa.paridad = rates[divisa.nombre];
             }
-        })
-        .catch(error => {
-            console.log('Error al obtener tasas de cambio:', error);
-        });
+        }
+    } catch (error) {
+        console.error('Error al obtener tasas de cambio:', error);
+    }
 }
 
 // Se llama a la función para obtener las tasas de cambio.
